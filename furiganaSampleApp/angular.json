@@ -115,6 +115,41 @@
           }
         }
       }
+    },
+    "ng-furigana": {
+      "projectType": "library",
+      "root": "projects/ng-furigana",
+      "sourceRoot": "projects/ng-furigana/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-furigana/tsconfig.lib.json",
+            "project": "projects/ng-furigana/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-furigana/src/test.ts",
+            "tsConfig": "projects/ng-furigana/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-furigana/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-furigana/tsconfig.lib.json",
+              "projects/ng-furigana/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "furiganaSampleApp"
