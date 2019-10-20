@@ -1,28 +1,42 @@
 <div class="title">
   <h2>Fugirana Sample App</h2>
-  <div class="description">Pretty basic place where to test the ng-furigana project</div>
+  <div class="description">
+    Pretty basic place where to test the ng-furigana project
+  </div>
 </div>
 <div class="container">
   <div class="card m-2">
     <div class="card-header">
-        <span class="mr-3">Example #1</span>
-        <span class="description">Latin letters above japanese symbols</span>
+      <span class="mr-3">Example #1</span>
+      <span class="description">Latin letters above japanese symbols</span>
     </div>
     <div class="card-body">
       <div class="card-title row">
-          <div class="col">Examples without ng-furigana</div>
-          <div class="col">Examples with ng-furigana</div>
+        <div class="col">Examples without ng-furigana</div>
+        <div class="col">Examples with ng-furigana</div>
       </div>
       <div class="card-text row">
         <div class="col">
-            <ruby>
-                明日
-                <rp>(</rp>
-                <rt>Ashita</rt>
-                <rp>)</rp>
-              </ruby>
+          <pre>
+                &lt;ruby&gt;
+                  明日
+                  &lt;rp&gt;(&lt;/rp&gt;
+                  &lt;rt&gt;ashita&lt;/rt&gt;
+                  &lt;rp&gt;)&lt;/rp&gt;
+                &lt;/ruby&gt;
+            </pre>
+          <ruby>
+            明日
+            <rp>(</rp>
+            <rt>Ashita</rt>
+            <rp>)</rp>
+          </ruby>
         </div>
         <div class="col">
+          <pre>
+            &lt;span ngFurigana="Ashita"&gt;明日&lt;/span&gt;
+          </pre>
+          <div class="mt-2"></div>
           <span ngFurigana="Ashita">明日</span>
         </div>
       </div>
@@ -31,24 +45,37 @@
 
   <div class="card m-2">
     <div class="card-header">
-        <span class="mr-3">Example #2</span>
-        <span class="description">Furigana above kanji</span>
+      <span class="mr-3">Example #2</span>
+      <span class="description">Furigana above kanji</span>
     </div>
     <div class="card-body">
       <div class="card-title row">
-          <div class="col">Examples without ng-furigana</div>
-          <div class="col">Examples with ng-furigana</div>
+        <div class="col">Examples without ng-furigana</div>
+        <div class="col">Examples with ng-furigana</div>
       </div>
       <div class="card-text row fs-120">
         <div class="col">
-            <ruby>
-              明日
-              <rp>(</rp>
-              <rt>あした</rt>
-              <rp>)</rp>
-            </ruby>
+          <pre>
+                &lt;ruby&gt;
+                  明日
+                  &lt;rp&gt;(&lt;/rp&gt;
+                  &lt;rt&gt;あした&lt;/rt&gt;
+                  &lt;rp&gt;)&lt;/rp&gt;
+                &lt;/ruby&gt;
+            </pre>
+          <div class="mt-2"></div>
+          <ruby>
+            明日
+            <rp>(</rp>
+            <rt>あした</rt>
+            <rp>)</rp>
+          </ruby>
         </div>
         <div class="col">
+          <pre>
+              &lt;span ngFurigana="あした"&gt;明日&lt;/span&gt;
+          </pre>
+          <div class="mt-2"></div>
           <div ngFurigana="あした">明日</div>
         </div>
       </div>
@@ -57,25 +84,88 @@
 
   <div class="card m-2">
     <div class="card-header">
-        <span class="mr-3">Example #3</span>
-        <span class="description">Like #2, but orientation in vertical</span>
+      <span class="mr-3">Example #3</span>
+      <span class="description">Like #2, but orientation in vertical</span>
     </div>
     <div class="card-body">
       <div class="card-title row">
-          <div class="col">Examples without ng-furigana</div>
-          <div class="col">Examples with ng-furigana</div>
+        <div class="col">Examples without ng-furigana</div>
+        <div class="col">Examples with ng-furigana</div>
       </div>
       <div class="card-text row">
         <div class="col">
-            <ruby>
+          <pre>
+            &lt;ruby&gt;
               明日
-              <rp>(</rp>
-              <rt>あした</rt>
-              <rp>)</rp>
-            </ruby>
+              &lt;rp&gt;(&lt;/rp&gt;
+              &lt;rt&gt;あした&lt;/rt&gt;
+              &lt;rp&gt;)&lt;/rp&gt;
+            &lt;/ruby&gt;
+
+            &lt;style&gt;
+              .vertical &#x0007B;
+                text-orientation: upright&quot;
+                writing-mode: vertical-rl&quot;
+              &#x0007D;
+            &lt;/style&gt;
+        </pre>
+          <div class="mt-2"></div>
+          <ruby class="text-center">
+            明日
+            <rp>(</rp>
+            <rt>あした</rt>
+            <rp>)</rp>
+          </ruby>
         </div>
         <div class="col">
-            <div class="vertical" ngFurigana="あした">明日</div>
+            <pre>
+                &lt;span class="vertical" ngFurigana="あした"&gt;明日&lt;/span&gt;
+
+                &lt;style&gt;
+                  .vertical &#x0007B;
+                    text-orientation: upright&quot;
+                    writing-mode: vertical-rl&quot;
+                  &#x0007D;
+                &lt;/style&gt;
+            </pre>
+          <div class="vertical" ngFurigana="あした">明日</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="false" class="card m-2">
+    <div class="card-header">
+      <span class="mr-3">Example #4</span>
+      <span class="description">Separate CSS classes</span>
+    </div>
+    <div class="card-body">
+      <div class="card-title row">
+        <div class="col">Examples without ng-furigana</div>
+        <div class="col">Examples with ng-furigana</div>
+      </div>
+      <div class="card-text row">
+        <div class="col">
+          <pre>
+              &lt;ruby&gt;
+                明日
+                &lt;rp&gt;(&lt;/rp&gt;
+                &lt;rt&gt;あした&lt;/rt&gt;
+                &lt;rp&gt;)&lt;/rp&gt;
+              &lt;/ruby&gt;
+            </pre>
+          <ruby>
+            明日
+            <rp>(</rp>
+            <rt>あした</rt>
+            <rp>)</rp>
+          </ruby>
+        </div>
+        <div class="col">
+            <pre>
+                &lt;span class="vertical" ngFurigana="あした"&gt;明日&lt;/span&gt;
+            </pre>
+          <div class="vertical" ngFurigana="あした">明日</div>
         </div>
       </div>
     </div>
