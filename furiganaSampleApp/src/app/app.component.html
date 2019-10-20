@@ -1,25 +1,46 @@
-<div>
+<div class="title">
   <h2>Fugirana Sample App</h2>
-  <p>Pretty basic place where to test the ng-furigana project</p>
+  <div class="description">Pretty basic place where to test the ng-furigana project</div>
 </div>
 <div class="container">
-  <div class="row">
-    <div class="col-6">
-      <h4 class="mb-3">Example without ng-furigana</h4>
-      <div class="p-2">
-        <h6>Example #1</h6>
-        <div>
-          <ruby>
-            明日
-            <rp>(</rp>
-            <rt>Ashita</rt>
-            <rp>)</rp>
-          </ruby>
+  <div class="card m-2">
+    <div class="card-header">
+        <span class="mr-3">Example #1</span>
+        <span class="description">Latin letters above japanese symbols</span>
+    </div>
+    <div class="card-body">
+      <div class="card-title row">
+          <div class="col">Examples without ng-furigana</div>
+          <div class="col">Examples with ng-furigana</div>
+      </div>
+      <div class="card-text row">
+        <div class="col">
+            <ruby>
+                明日
+                <rp>(</rp>
+                <rt>Ashita</rt>
+                <rp>)</rp>
+              </ruby>
+        </div>
+        <div class="col">
+          <span ngFurigana="Ashita">明日</span>
         </div>
       </div>
-      <div class="p-2">
-        <h6>Example #2</h6>
-        <div>
+    </div>
+  </div>
+
+  <div class="card m-2">
+    <div class="card-header">
+        <span class="mr-3">Example #2</span>
+        <span class="description">Furigana above kanji</span>
+    </div>
+    <div class="card-body">
+      <div class="card-title row">
+          <div class="col">Examples without ng-furigana</div>
+          <div class="col">Examples with ng-furigana</div>
+      </div>
+      <div class="card-text row fs-120">
+        <div class="col">
             <ruby>
               明日
               <rp>(</rp>
@@ -27,17 +48,35 @@
               <rp>)</rp>
             </ruby>
         </div>
+        <div class="col">
+          <div ngFurigana="あした">明日</div>
+        </div>
       </div>
     </div>
-    <div class="col-6">
-      <h4 class="mb-3">Example with ng-furigana</h4>
-      <div class="p-2">
-        <h6>Example #1</h6>
-        <div ngFurigana="Ashita">明日</div>
+  </div>
+
+  <div class="card m-2">
+    <div class="card-header">
+        <span class="mr-3">Example #3</span>
+        <span class="description">Like #2, but orientation in vertical</span>
+    </div>
+    <div class="card-body">
+      <div class="card-title row">
+          <div class="col">Examples without ng-furigana</div>
+          <div class="col">Examples with ng-furigana</div>
       </div>
-      <div class="p-2">
-        <h6>Example #2</h6>
-        <div ngFurigana="あした">明日</div>
+      <div class="card-text row">
+        <div class="col">
+            <ruby>
+              明日
+              <rp>(</rp>
+              <rt>あした</rt>
+              <rp>)</rp>
+            </ruby>
+        </div>
+        <div class="col">
+            <div class="vertical" ngFurigana="あした">明日</div>
+        </div>
       </div>
     </div>
   </div>
