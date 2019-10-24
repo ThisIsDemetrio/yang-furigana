@@ -38,7 +38,7 @@ export class NgFuriganaDirective implements AfterViewInit {
   isValidElement(): boolean {
     return (
       this.el.nativeElement.nodeName.toLowerCase() === SPAN &&
-      this.el.nativeElement.childElementCount.length === 0
+      this.el.nativeElement.childElementCount === 0
     );
   }
 }
