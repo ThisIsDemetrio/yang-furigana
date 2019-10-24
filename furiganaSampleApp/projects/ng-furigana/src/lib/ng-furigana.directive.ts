@@ -44,10 +44,11 @@ export class NgFuriganaDirective implements AfterViewInit {
   /**
    * Generate the template to be added to the HTML as result
    */
-  generateRubyTag(): string {
+  private generateRubyTag(): string {
     let styleCode = '';
     if (!!this.ngFuriganaClass) {
-      styleCode = ` class="${this.ngFuriganaClass}"`;
+      const encapsulationAttribute = this.el.nativeElement.attributes[0];
+      styleCode = ` ${encapsulationAttribute.name} class="${this.ngFuriganaClass}"`;
     }
     if (!!this.ngFuriganaStyle) {
       styleCode += ` style="${this.ngFuriganaStyle}"`;
