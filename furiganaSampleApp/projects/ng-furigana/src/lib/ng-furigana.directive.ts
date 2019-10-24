@@ -13,6 +13,8 @@ const SPAN = 'span';
 })
 export class NgFuriganaDirective implements AfterViewInit {
   @Input() ngFurigana: string;
+  @Input() ngFuriganaClass: string;
+  @Input() ngFuriganaStyle: string;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
@@ -24,21 +26,35 @@ export class NgFuriganaDirective implements AfterViewInit {
       return;
     }
 
-    this.renderer.setProperty(
-      this.el.nativeElement,
-      'innerHTML',
-      `<ruby>${this.el.nativeElement.innerHTML}<rp>(</rp><rt>${this.ngFurigana}</rt><rp>)</rp></ruby>`
-    );
+    const html = this.generateRubyTag();
+    this.renderer.setProperty(this.el.nativeElement, 'innerHTML', html);
   }
 
   /**
    * Check if the element passed as argument is a <span> element and has no child tags
    * @param el the Element to evaluate
    */
-  isValidElement(): boolean {
+  private isValidElement(): boolean {
     return (
       this.el.nativeElement.nodeName.toLowerCase() === SPAN &&
       this.el.nativeElement.childElementCount === 0
     );
+  }
+
+  /**
+   * Generate the template to be added to the HTML as result
+   */
+  private generateRubyTag(): string {
+    let styleCode = '';
+    if (!!this.ngFuriganaClass) {
+      const encapsulationAttribute = this.el.nativeElement.attributes[0];
+      styleCode = ` ${encapsulationAttribute.name} class="${this.ngFuriganaClass}"`;
+    }
+    if (!!this.ngFuriganaStyle) {
+      styleCode += ` style="${this.ngFuriganaStyle}"`;
+    }
+
+    const furiganaHTML = `<rp>(</rp><rt${styleCode}>${this.ngFurigana}</rt><rp>)</rp>`;
+    return `<ruby>${this.el.nativeElement.innerHTML}${furiganaHTML}</ruby>`;
   }
 }
