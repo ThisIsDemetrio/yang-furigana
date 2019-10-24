@@ -44,12 +44,14 @@ After that, you're ready to use it in any template file that includes only text 
 > ```
 ## Add some style to it
 Adding style is quite easy. You can add it straight to the span element, along with the ngFurigana attribute:
+ 
 `<span ngFurigana="あした" class="some-class>明日</span>`
 
 In this way, the class will affect the entire HTML, which mean it will work for the main text of the element and the text above.
 In case you want assign some style on the furigana text only, you may add to the span element the attributes `ngFuriganaClass` and/or `ngFuriganaStyle`. You can easily guess how they work:
 
 `<span ngFurigana="あした" ngFuriganaClass="some-class>明日</span>`
+
 `<span ngFurigana="あした" ngFuriganaStyle="color:blue;">明日</span>`
 
 The syntax is exactly as you're adding a normal class or a regular style attribute in an HTML template of any kind.
