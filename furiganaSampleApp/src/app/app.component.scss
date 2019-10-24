@@ -2,6 +2,12 @@
   display: block;
   font-family: "Roboto", sans-serif;
 
+  pre {
+    font-size: 75%;
+    padding-top: 0.75rem;
+    background-color: lighten(lightgray, 10%);
+  }
+
   .title {
     background-color: lightgray;
     padding-left: 3rem;
