@@ -1,3 +1,40 @@
 :host {
-    display: block;
+  display: block;
+  font-family: "Roboto", sans-serif;
+
+  span {
+    font-size: 1.2rem;
+  }
+
+  pre {
+    font-size: 75%;
+    padding-top: 0.75rem;
+    background-color: lighten(lightgray, 10%);
+  }
+
+  .title {
+    background-color: lightgray;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+
+    .description {
+      font-style: italic;
+    }
+  }
+
+  .fs-120 {
+    font-size: 1.2rem;
+  }
+
+  .vertical {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+  }
+
+  .test-class {
+    font-style: italic;
+    color: red;
+    font-size: 0.6rem;
+  }
 }
