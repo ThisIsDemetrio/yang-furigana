@@ -1,6 +1,6 @@
 {
 	"name": "ng-furigana",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"description": "An easy way to use <ruby> tags in Angular",
 	"author": {
 		"name": "Demetrio Marino",
