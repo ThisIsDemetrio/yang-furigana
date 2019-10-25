@@ -3,9 +3,11 @@
 **ng-furigana** is a quick way to use the `<ruby>` tag in an [Angular](https://angular.io) template. **Furigana** is a japanese word that indicates that little characters you might see sometimes above Kanji (chinese ideograph) that indicates how to read that particular kanji.
 
 To achieve this, you'd use the `<ruby>` tag in html:
+
 `<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>`
 
 But you can achieve it with a simpler syntax:
+
 `<span ngFurigana="あした">明日</span>`
 
 Which one do you prefer? You might wanna check [the Wikipedia page](https://en.wikipedia.org/wiki/Furigana) to learn more about furigana in general. Also you can use it with the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet). It's up to you.
@@ -74,5 +76,3 @@ ng serve --open
 ```
 
 and there your defualt internet browser will open at [http://localhost:4200](http://localhost:4200). Or whatever you configured your environment. Enjoy.
-
-> (Written with [StackEdit](https://stackedit.io/) - it's actually pretty cool)
