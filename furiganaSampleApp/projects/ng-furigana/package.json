@@ -1,20 +1,28 @@
 {
-	"name": "ng-furigana",
-	"version": "0.3.1",
-	"description": "An easy way to use <ruby> tags in Angular",
-	"author": {
-		"name": "Demetrio Marino",
-		"url": "https://github.com/carbammato"
-	},
-	"homepage": "https://github.com/Carbammato/ng-furigana#readme",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Carbammato/ng-furigana"
-	},
-	"keywords": ["front-end", "Angular", "HTML", "Ruby", "Phonetic", "Furigana", "library"],
-	"license": "SEE LICENSE IN LICENSE",
-	"peerDependencies": {
-		"@angular/common": "^8.2.8",
-		"@angular/core": "^8.2.8"
-	}
+  "name": "ng-furigana",
+  "version": "0.3.2",
+  "description": "An easy way to use <ruby> tags in Angular",
+  "author": {
+    "name": "Demetrio Marino",
+    "url": "https://github.com/carbammato"
+  },
+  "homepage": "https://github.com/Carbammato/ng-furigana#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Carbammato/ng-furigana"
+  },
+  "keywords": [
+    "front-end",
+    "Angular",
+    "HTML",
+    "Ruby",
+    "Phonetic",
+    "Furigana",
+    "library"
+  ],
+  "license": "https://github.com/Carbammato/ng-furigana/blob/master/LICENSE",
+  "peerDependencies": {
+    "@angular/common": "^8.2.8",
+    "@angular/core": "^8.2.8"
+  }
 }
