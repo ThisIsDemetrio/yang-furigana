@@ -26,6 +26,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('furiganaSampleApp app is running!');
+	  expect(compiled.querySelector('.title h2').textContent).toContain('Fugirana Sample App');
   });
 });
