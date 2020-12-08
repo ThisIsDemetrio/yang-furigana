@@ -9,6 +9,8 @@ But you can achieve it with a simpler syntax:
 `<span yangFurigana="あした">明日</span>`
 
 Which one do you prefer? You might wanna check [the Wikipedia page](https://en.wikipedia.org/wiki/Furigana) to learn more about furigana in general. Also you can use it with the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet). It's up to you.
+## How it looks
+Here's a [demo](https://carbammato.github.io/yang-docs/) with several examples. Give it a look, I'm sure you're gonna like it!
 
 ## How to include in your project
 
