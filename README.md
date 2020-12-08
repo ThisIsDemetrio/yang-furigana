@@ -13,7 +13,7 @@ Which one do you prefer? You might wanna check [the Wikipedia page](https://en.w
 ## How to include in your project
 
 The easiest part: use [NPM](https://www.npmjs.com/) to add it in your project. Go to your app folder and type:
- `npm install @yang/furigana --save-dev`
+ `npm install @project161/furigana --save-dev`
 
 Add it will be added to project's `package.json` dependencies.
 > Tip: (Add a `-g` to save it globally)
@@ -22,6 +22,8 @@ Add it will be added to project's `package.json` dependencies.
 
 First of all, make sure you add the `yangFuriganaModule` to the list of `import` in the module containing the templates where you're gonna use the directive.
 ```
+import { YangFuriganaModule } from "@project161/yang-furigana";
+...
 @NgModule({
   imports: [
     ...

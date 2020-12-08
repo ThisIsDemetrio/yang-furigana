@@ -1,5 +1,5 @@
 {
-  "name": "@yang/furigana",
+  "name": "@project161/yang-furigana",
   "version": "0.4.0",
   "description": "An easy way to use <ruby> tags in Angular",
   "author": {
@@ -24,6 +24,9 @@
   "peerDependencies": {
     "@angular/common": "^8.2.8",
     "@angular/core": "^8.2.8"
+  },
+  "publishConfig": {
+	  "access": "public"
   },
   "dependencies": {
     "tslib": "^2.0.0"

@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### [0.4.0] - 2020-12-08
 
 #### Changed
-- **BREAKING CHANGES**: Changed library name to `@yang/furigana`. Also the module, the directive and its properties has been updated too. Please refer to the MIGRATE.md file for more info.
+- **BREAKING CHANGES**: Changed library name to `@project161/yang-furigana`. Also the module, the directive and its properties has been updated too. Please refer to the MIGRATE.md file for more info.
 
 ### [0.3.2] - 2019-12-09
 #### Fixed
