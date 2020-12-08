@@ -56,17 +56,4 @@ In case you want assign some style on the furigana text only, you may add to the
 The syntax is exactly as you're adding a normal class or a regular style attribute in an HTML template of any kind.
 
 
-## Test the SampleApp
-Here in GitHub you can have a look at the code (it is a simple Angular Directive, nothing that fancy) and a SampleApp that you can run on your own device in order to test it as you wish in a safe environment.
-```
-git clone https://github.com/Carbammato/yang-furigana.git
-cd .\yang-furigana\furiganaSampleApp
-npm install
-ng serve --open
-```
-and there your defualt internet browser will open at [http://localhost:4200](http://localhost:4200). Or whatever you configured your environment. Enjoy.
-
-
-
-
 > (Written with [StackEdit](https://stackedit.io/) - it's actually pretty cool)
