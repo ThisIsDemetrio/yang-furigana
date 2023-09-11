@@ -4,29 +4,29 @@
   "description": "An easy way to use <ruby> tags in Angular",
   "author": {
     "name": "Demetrio Marino",
-    "url": "https://github.com/carbammato"
+    "url": "https://github.com/ThisIsDemetrio"
   },
-  "homepage": "https://github.com/Carbammato/yang-furigana#readme",
+  "homepage": "https://github.com/ThisIsDemetrio/yang-furigana#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Carbammato/yang-furigana"
+    "url": "https://github.com/ThisIsDemetrio/yang-furigana"
   },
   "keywords": [
     "front-end",
     "Angular",
     "HTML",
-    "Ruby",
-    "Phonetic",
-    "Furigana",
+    "ruby",
+    "phonetic",
+    "furigana",
     "library"
   ],
-  "license": "https://github.com/Carbammato/yang-furigana/blob/master/LICENSE",
+  "license": "https://github.com/ThisIsDemetrio/yang-furigana/blob/master/LICENSE",
   "peerDependencies": {
     "@angular/common": "^8.2.8",
     "@angular/core": "^8.2.8"
   },
   "publishConfig": {
-	  "access": "public"
+    "access": "public"
   },
   "dependencies": {
     "tslib": "^2.0.0"
